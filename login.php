@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="sv">
 <head>
-    <title><?= $site_title . $divider . $page_title; ?></title>
+    <title>Login</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/inloggning.css" type="text/css">
 </head>
@@ -12,11 +12,11 @@
 <form action="functions/login.php" method="post">
 
   <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <label for="uname"><b>Username:</b></label>
+    <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
 
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input id="psw" type="password" placeholder="Enter Password" name="psw" required>
         
     <button type="submit">Login</button>
     <label>
